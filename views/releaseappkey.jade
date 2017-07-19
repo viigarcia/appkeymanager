@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Release App Key:
+    h2
+      p To release an app key to your customer account, please insert his Flux Manager Account and the quantity below.
+
+        h3
+          form(name="email", method="post")
+            div.input
+                span.label Flux Manager E-mail:<br />
+                input(type="text", name="email")
+            div.input <br />
+                span.label Number of App Keys:<br />
+                input(type="text", name="keyquantity")
+
+            div.actions <br />
+                input(type="submit", value="SEND!")

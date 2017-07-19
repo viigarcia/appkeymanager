@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Delete App Key:
+    h2
+      p To delete an app key from your customer account, please insert his Flux Manager Account and the App Key below.
+
+      h3
+        form(name="email", method="post")
+          div.input
+              span.label Flux Manager E-mail:<br />
+              input(type="text", name="emaildelete")
+          div.input <br />
+              span.label App Key Code:<br />
+              input(type="text", name="keycodedelete")
+
+          div.actions <br />
+              input(type="submit", value="SEND!")
